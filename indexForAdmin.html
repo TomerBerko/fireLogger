@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireLogger</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/measureStyle.css" />
+    <link rel="stylesheet" href="./login-signup/login-signup.css" />
+    
+</head>
+
+<body style="background-color:rgb(241, 199, 119);">
+    <div class="leaflet-top leaflet-left container_Nav " id="containerNav">
+        <nav id='menu'>
+            <ul>
+                <li onclick=resetMap()><a>Reset Map</a></li>
+                <li onclick=signOut()><a>Sign out</a></li>
+                <li onclick=fullScreenView()><a>View in Full Screen</a></li>
+                <li onclick=showAllFires()><a>Show All Fires</a></li>
+                <li onclick=showNewFireCoordinates()><a>Show new fire alert</a></li>
+                <li onclick=removeMarkers()><a>Remove all fire alerts </a></li>
+                <li onclick=removeAllFires()><a>Remove All Fires</a></li>
+                <li><a class="coordinates"></a></li>
+            </ul>
+        </nav>
+    </div>
+  <div id="map">
+  </div>
+      <img class="img" src="./Styles/assets/fireLoggerLOGO.png" alt="FireLogger Logo">
+</body>
+
+
+</html>
+<script src="./login-signup/uuidv4.js"></script>
+<script src ="./login-signup/signup-function.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="./lib/leaflet.ajax.min.js"></script>
+<script src="./lib/leaflet.browser.print.min.js"></script>
+<script src="./lib/leaflet-measure.js"></script>
+<script src="mapbasefuncs.js"></script>
+<script src="mapManipulations.js"></script>

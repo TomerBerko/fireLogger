@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>FireLogger entry page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    
+    
+  </div>
+</div>
+
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">   
+    <h1 class="w3-margin w3-jumbo">FireLogger</h1>   
+    <p class="w3-xlarge">Welcome to FireLogger</p>   
+    <p class="w2-xlarge">application that let you report on a new fire and you can also watch all the fires occurred in the last years.<br>
+      You can log in as admin by username: adminio and password: admin.<br>
+      You can also log in as a user by username: avisami and password: 12345.<br>
+      Or by creating a user yourself.</p>   
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="goToFireLogger()">Get Started</button> 
+</header>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>The purpose of the app</h1>
+      <h5 class="w3-padding-32">The purpose of the app is basically to give access to all the people who are on the net,
+        Get the information about fires and draw conclusions from this information and give them an option to give reports that will go to firefighters who can respond quickly. In this way firefighters also have the information flowing from the people and people also have the information available from firefighters</h5>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>About Us</h1>
+      <h5 class="w3-padding-32">We worked on the project Three partners We wanted all people to have access to the information available regarding fires in the country. It was important to us and we believe that firefighters also have a great need to receive the information regarding reports and the biggest source of this information is the people with the convenience of the app.
+        We believe this app will make a national change for the better regarding firefighting</h5>
+
+      
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Thank you so much for reading.</h1>
+</div>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ 
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
+<script src="mapManipulations.js"></script>

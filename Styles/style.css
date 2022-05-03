@@ -1,0 +1,112 @@
+#map {
+    width: 100%;
+    height: 850px;
+}
+
+
+.container_Nav{
+    width: 400px;
+    max-width: 400px;
+	height: 700px;
+    margin-left: 1rem;
+	margin-top: 2.8rem;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    font: 500 1rem 'Quicksand', sans-serif;
+	position: absolute;
+    
+} 
+
+
+.img {
+    padding: 0%;
+    width: 90px;
+}
+.buttonz {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #c2452e 100%);
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #a8701c;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+    }
+.buttonz:hover {
+    background:linear-gradient(to bottom, #c2452e 5%, #ffec64 100%);
+    background-color:#c2452e;
+    }
+    .buttonz:active {
+    position:relative;
+    top:1px;
+    }
+    
+/* ------------------------------------------------------------------------------------------ */
+
+
+#menu {
+	color: #FFF;
+}
+#menu ul, #menu li {
+	padding: 0rem;
+	list-style: none;
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	margin:20px;
+	padding-bottom: 1rem;
+	background: linear-gradient(to bottom,  #CC8F27,  #FF120A);
+	padding-left: 18px;
+	border-radius: 10px;
+	color: #FFF;
+	height: 45px;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+#menu a.coordinates{
+	font-size: 12px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #0099CC;
+}
+#menu li:hover {
+	color: #0099CC;
+	background: linear-gradient(to bottom,  #FF120A, #CC8F27);
+}
+
+
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}

@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireLogger</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/measureStyle.css" />
+    <link rel="stylesheet" href="./login-signup/login-signup.css" />
+    
+</head>
+
+<body style="background-color:rgb(241, 199, 119);">
+    <div class="leaflet-top leaflet-left container_Nav " id="containerNav">
+        <nav id='menu'>
+            <ul>
+                <li onclick=resetMap()><a>Reset Map</a></li>
+                <li onclick=login_SignupForm()><a>Login/Signup</a></li>
+                <li onclick=fullScreenView()><a>View in Full Screen</a></li>
+                <li onclick=showAllFires()><a>Show All Fires</a></li>
+                <li onclick=removeAllFires()><a>Remove All Fires</a></li>
+                <li><a class="coordinates"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="map">
+    <div class=" leaflet-top leaflet-left container form--hidden" id="containerForm">
+      <form  class="From" id="login">
+        <h1 class="form__title">Login</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+            <input type="text" id="loginUserName" class="form__input" autofocus placeholder="Username or email">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" id="loginPassword" class="form__input" autofocus placeholder="Password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" type="submit">Continue</button>
+        <p class="form__text">
+            <a  class="form__link" herf="./" id="linkCreateAccount">Dont have account? Create account</a>
+        </p>
+        <p class="form__text">
+            <a  class="form__link" herf="./" id="linkContinueWithoutAccount">Continue without Account</a>
+        </p>
+    </form>
+    <form  class="form  form--hidden " id="createAccount">
+        <h1 class="form__title">Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div class="form__input-group">
+            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="text" id="signupEmail" class="form__input" autofocus placeholder="Email Address">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" id="signUpPassword" class="form__input" autofocus placeholder="Password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" id="confirmPassword" class="form__input" autofocus placeholder="Confirm password">
+            <div class="form__input-error-message"></div>
+        </div>
+        <button class="form__button" id="signUpButton" type="submit">Continue</button>
+        <p class="form__text">
+            <a  class="form__link" herf="./" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+        <p class="form__text">
+          <a  class="form__link" herf="./" id="linkForgetItAndContinueWithoutAccount">Forget it and continue without an account</a>
+      </p>
+    </form>
+  </div>
+    </div>
+      <img class="img" src="./Styles/assets/fireLoggerLOGO.png" alt="FireLogger Logo">
+</body>
+
+
+</html>
+<script src="./login-signup/uuidv4.js"></script>
+<script src ="./login-signup/login-signup.js"></script>
+<script src ="./login-signup/userData.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="./lib/leaflet.ajax.min.js"></script>
+<script src="./lib/leaflet.browser.print.min.js"></script>
+<script src="./lib/leaflet-measure.js"></script>
+<script src="mapbasefuncs.js"></script>
+<script src="mapManipulations.js"></script>
+
